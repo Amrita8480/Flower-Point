@@ -25,6 +25,40 @@ html{
     overflow: hidden;
 }
 
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255,51, 153, .05);
+}
+
+.heading span{
+    color: var(--pink);
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #eee;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+
+.btn:hover{
+    background: var(--pink);
+}
+
 header{
     position: fixed;
     left: 0; top: 0; right: 0;
@@ -65,7 +99,7 @@ header .icon a{
     margin-left: 1.5rem;
 }
 
-header .navbar a:hover{
+header .icon  a:hover{
     color: var(--pink);
 }
 
@@ -84,6 +118,100 @@ header .fa-bars{
 }
 
 
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    min-height: 100vh;
+    background: url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap:wrap; /* Prevent wrapping */
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container {
+    flex: 1 1 40rem ;
+    position: relative;
+}
+
+.about .row .video-container video{
+
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+    padding: 2rem 0 0 2rem;
+    min-width: 0;
+}
+
+.about .row .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.about .row .content h4 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.about .row .content p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.about .row .content .btn {
+    margin-top: 1rem;
+}
+
+.home .content a {
+    font-size: 1.4rem;
+    color: var(--pink);
+    text-decoration: underline;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
 
 
 
@@ -96,6 +224,13 @@ header .fa-bars{
 
     header{
         padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
     }
 }
 
@@ -121,6 +256,12 @@ header .fa-bars{
         border:.1rem solid rgba(0,0,0,.1);
         display: block;
         }
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
 }
 
 
@@ -131,5 +272,8 @@ header .fa-bars{
         font-size: 50%;
     }
 
-}
+    .heading{
+        font-size: 3rem;
+    }
 
+}
